@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@800&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.png);
+    background-size: cover;
+        font-family: poppins;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    position: fixed; /* Keeps the navbar at the top of the viewport */
+    top: 0;
+    width: 100%; /* Ensures navbar spans the full width of the page */
+    display: flex;
+    justify-content: center; /* Center aligns the header text */
+    align-items: center;
+    padding: 20px;
+    background-image: url(images/back.jpeg);
+    background-size: cover; /* Makes the image cover the entire navbar */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+    color: #04642f;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow under the navbar */
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+.header {
+    font-size: 2em;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    color: #ffffff2d;
+    text-shadow: 
+    1px 1px 1px #ffffff00,   /* White stroke on the right and bottom */
+    1px 1px 1px #0a0a0a17, /* White stroke on the left and top */
+    1px 1px 1px #0a0a0a10,  /* White stroke on the top right */
+    1px 1px 1px #0000003b;  /* White stroke on the bottom left */
+}
+
+main {
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 30px 80px 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 100px auto;
+    justify-content: center ;
+    max-width: 350px;  /* Controls the max width on larger screens */
+    margin-top: 120px;  /* Adjust the top margin to provide spacing from navbar */
+    
+    
+}
+
+main form {
+    border: 2px solid rgba(255, 255, 255, 0.308);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    color: white;
+}
+
+main form input,
+main form button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    color: #ffffff;
+    
+}
+main form button{
+    cursor: pointer;
+}
+main form i {
+    opacity: 0.7;
+}
+
+main .result {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .temperature img {
+    width: 150px;
+    filter: drop-shadow(
+        0 10px 35px #000000
+    );
+}
+main .temperature figcaption {
+    font-size: 3em;
+}
+
+main #description {
+    padding: 10px 0 30px;
+}
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+main li {
+    background-color: #f78a55;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 7px;
+    background-image:linear-gradient(
+        to bottom,
+        transparent 50%,
+        #0003 50%
+    );
+    font-weight: bold;
+    font-size: small;
+}
+
+main li i {
+    font-size: 2em;
+    display: block!important;
+    margin: 20px 0;
+}
+
+main li:nth-child(2) {
+    background-color: #b56291;
+}
+main li:nth-child(3) {
+    background-color: #48567b;
+}
+
+main.error {
+    animation: errorEffect 0.3s linear 1;
+    border: solid;
+    border-color: red;
+}
+
+@keyframes errorEffect {
+    0%{
+    transform: translate(10px, 5px);
+    }
+    25%{
+    transform: translate(-5px, 0);
+    }
+    50%{
+    transform: translate(-8px, 2px);
+    }
+    75%{
+    transform: translate(-2px, -5px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+
+}
+
+@media (max-width: 600px) {
+    main {
+        margin-top: 60px; /* Adjust top margin on smaller screens */
+        width: 90%; /* Make sure it fits the mobile screen */
+    }
+}
+
+
+@media (max-width: 375px) {
+    main {
+        margin-top: 100px; /* Adjust top margin on smaller screens */
+        width: 90%; /* Make sure it fits the mobile screen */
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Sight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <p class="header">SKY SIGHT</p>
+    </nav>
+        <main>
+            <form action="">
+                <input type="text" autocomplete="off" id="valueSearch">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <section class="result">
+                <figure class="name" id="city">
+                    <figcaption>İstanbul</figcaption>
+                    <img src="https://flagsapi.com/TR/shiny/32.png" alt="flag" id="flag">
+                </figure>
+                <figure class="temperature" id="temperature">
+                    <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="" id="image">
+                    <figcaption>
+                        <span>31</span>
+                        <sup>o</sup>
+                    </figcaption>
+                </figure>
+            
+                <p id="description">
+                    Overcast clouds
+                </p>
+                <ul>
+                    <li>
+                        <span>Clouds</span>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span id="clouds">98</span>%
+                    </li>
+                    <li>
+                        <span >Humidity</span>
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="humidity">55</span>%
+                    </li>
+                    <li>
+                        <span>Pressure</span>
+                        <i class="fa-solid fa-gauge"></i>
+                        <span id="pressure">1861</span>hPa
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

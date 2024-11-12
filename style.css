@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@800&display=swap');
 
+
+body, html {
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     min-height: 100vh;
@@ -8,8 +12,8 @@ body {
     align-items: center;
     background-image: url(images/background.png);
     background-size: cover;
-        font-family: poppins;
-    overflow-x: hidden;
+    font-family: poppins;
+   
 }
 * {
     margin: 0;
@@ -17,21 +21,21 @@ body {
     
 }
 .navbar {
-    position: fixed; /* Keeps the navbar at the top of the viewport */
+    position: absolute; 
     top: 0;
-    width: 100%; /* Ensures navbar spans the full width of the page */
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Center aligns the header text */
+    justify-content: center; 
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
     background-image: url(images/back.jpeg);
-    background-size: cover; /* Makes the image cover the entire navbar */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: 10; 
     color: #04642f;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow under the navbar */
-    z-index: 1000; /* Ensures navbar stays on top */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    
 }
 
 .header {
@@ -40,10 +44,10 @@ body {
     font-style: normal;
     color: #ffffff2d;
     text-shadow: 
-    1px 1px 1px #ffffff00,   /* White stroke on the right and bottom */
-    1px 1px 1px #0a0a0a17, /* White stroke on the left and top */
-    1px 1px 1px #0a0a0a10,  /* White stroke on the top right */
-    1px 1px 1px #0000003b;  /* White stroke on the bottom left */
+    1px 1px 1px #ffffff00,   
+    1px 1px 1px #0a0a0a17, 
+    1px 1px 1px #0a0a0a10,  
+    1px 1px 1px #0000003b;  
 }
 
 main {
@@ -58,8 +62,8 @@ main {
     box-sizing: border-box;
     margin: 100px auto;
     justify-content: center ;
-    max-width: 350px;  /* Controls the max width on larger screens */
-    margin-top: 120px;  /* Adjust the top margin to provide spacing from navbar */
+    max-width: 350px;  
+    margin-top: 120px; 
     
     
 }
@@ -173,17 +177,3 @@ main.error {
 
 }
 
-@media (max-width: 600px) {
-    main {
-        margin-top: 60px; /* Adjust top margin on smaller screens */
-        width: 90%; /* Make sure it fits the mobile screen */
-    }
-}
-
-
-@media (max-width: 375px) {
-    main {
-        margin-top: 100px; /* Adjust top margin on smaller screens */
-        width: 90%; /* Make sure it fits the mobile screen */
-    }
-}

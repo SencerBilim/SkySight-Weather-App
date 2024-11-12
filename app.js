@@ -21,7 +21,7 @@ let url = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${
 const searchWeather = () => {
     fetch(url + "&q=" + valueSearch.value)
     .then(res => res.json())
-    .then(data => {console.log(data);
+    .then(data => {console.log("");
         if(data.cod == 200){
             city.querySelector("figcaption").innerText = data.name;
             city.querySelector("img").src= "https://flagsapi.com/"+data.sys.country+"/shiny/32.png"

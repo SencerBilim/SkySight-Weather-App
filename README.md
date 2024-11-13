@@ -22,7 +22,7 @@ Sky Sight is a simple yet stylish weather app that allows users to get real-time
 
 
 ### Demo
-- You can view a live demo of the application here: [skysight.onrender.com](#)
+- You can view a live demo of the application here: [skysight.onrender.com](skysight.onrender.com)
 
 Enjoy using **Sky Sight** to check the weather with ease!
 
